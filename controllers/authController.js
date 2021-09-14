@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../models/userModal");
+const User = require("../models/userModel");
 const { promisify } = require("util");
 const signToken = (id) => {
   return jwt.sign({ id: id }, process.env.secretKey, {

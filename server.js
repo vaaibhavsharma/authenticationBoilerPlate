@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
-
+const displayRoutes  = require('./nice')
 process.on('uncaughtException', err=>{
   console.log(`${err.name}, ${err.message}`)
   process.exit(1)
@@ -19,9 +19,12 @@ mongoose.connect(DB, {
   console.log("DB CONNECTED!")
 })
 
+// console.log(listEndpoints(app));
+
 // SERVER START ////////////////////////////////////////////////////////////////////
 const port = 3000;
 const server = app.listen(3000, () => {
+  displayRoutes(app);
   console.log(`app running on port ${port}`);
 });
 

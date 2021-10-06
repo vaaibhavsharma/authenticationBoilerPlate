@@ -19,9 +19,9 @@ Request body:
 
     {
         "name": "Vaibhav",
-        "email": "apple.vaibhav649@gmail.com",
-        "password": "balma1234",
-        "passwordConfirm": "balma1234"
+        "email": "test@testmail.com",
+        "password": "test1234",
+        "passwordConfirm": "test1234"
     }
 
 ### POST /login
@@ -29,8 +29,8 @@ Example: 127.0.0.1:3000/api/v1/auth/login
 Request body:
 
     {
-        "email": "apple.vaibhav649@gmail.com",
-        "password": "balma1234"
+        "email": "test@testmail.com",
+        "password": "test1234"
     }
     
 ### GET /logout
